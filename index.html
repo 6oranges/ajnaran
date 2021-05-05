@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="mask-icon" href="./icons/safari-pinned-tab.svg" color="#f2911d">
+    <link rel="shortcut icon" href="./icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#f2911d">
+    <meta name="msapplication-config" content="./icons/browserconfig.xml">
+    <meta name="theme-color" content="#000">
+
+    <!-- SEO -->
+    <meta name="description" content="Ajnaran is a puzzle and platform type game currently in development. The goal of each level is to fall on the blue button. There are default levels built in but users can also make their own levels and play them.">
+    <meta name="keywords" content="ajnaran, platform puzzle game, ajnaron, platformer, puzzle game, javascript, javascript game, video game">
+    <meta name="author" content="Tim Stander, Caleb Graves, Antoine Florian">
+    <script>if('serviceWorker' in navigator){navigator.serviceWorker.addEventListener('controllerchange',()=>{location.reload();document.getElementById('update').classList.add('show')});navigator.serviceWorker.register('service-worker.js').catch(err=>console.error('Error', err));}</script>
+    <meta name="theme-color" content="F2911D"/>
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <link link="timothystander.altervista.org/apps/ajnaran" rel="canonical"/>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="manifest" href="manifest.json">
+    <title>Ajnaran</title>
+</head>
+<body>
+    <div id="content">
+        <div id="update"><div>Updating</div></div>
+        <header>
+            <div id="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#!news">Home</a></li>
+                    <li><a href="#!play">Game</a></li>
+                    <li><a href="#!creators">About</a></li>
+                    <li id='btnAdd'><button>Install</button></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="news" style="display:block;">
+            <!--<div class="mainimg">
+                <h1>Latest on Ajnaran</h1>
+            </div>
+            <div class="event">
+                <h2>Major Level Update</h2>
+            </div>
+            <div class="event">
+                <h2>Insane Tiles Added</h2>
+            </div>
+            <div class="event">
+                <h2>Accounts Enabled</h2>
+            </div>
+        </main>-->
+
+<div class="main-image" id="main-image-2">
+<h2 class="welcome-message">Welcome to Ajnaran</h2> </div>
+<h1>Latest Events</h1>
+
+<div class="main-container">
+
+<div id="news">
+<div class="event">
+<div class="event-information">
+<h2>Presentation Video</h2>
+<p>This is a presentation for Silicon Slopes about what we did at Code Camp.</p>
+</div>
+<div class="event-video">
+<iframe width="600" height="400" src="https://www.youtube.com/embed/O-OY1RwpwOs?rel=0" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+<div class="event event-n-top">
+<div class="event-information">
+<h2>Minor Level Update</h2>
+<p>Five new levels have been added to the game.</p>
+<ul>
+<li>Looping Maps</li>
+<li>New Tiles Included</li>
+<li>5 More Levels</li>
+</ul>
+</div>
+<div class="event-image" id="event-level-update-1">
+</div>
+</div>
+<div class="event event-n-top">
+<div class="event-information">
+<h2>Game Changing Tiles Added</h2>
+<p>Five new tiles added.</p>
+<ul>
+<li>One-Way Door Tile</li>
+<li>Checkpoint</li>
+<li>Glass Tile</li>
+<li>Ice Tile</li>
+<li>Instant Gravity Tile</li>
+</ul>
+</div>
+<div class="event-image" id="event-tiles-added-1">
+</div>
+</div>
+<div class="event event-n-top">
+<div class="event-information">
+<h2>Accounts Enabled</h2>
+<p>You can now customize your account.</p>
+<ul>
+<li>Customize Your Account</li>
+<li>Email Verification</li>
+</ul>
+</div>
+<div class="event-image" id="event-accounts-enabled">
+</div>
+</div>
+</div>
+</div>
+</main>
+        <main id="creators">
+            <div class="mainimg">
+                <h1>Creators of Ajnaran</h1>
+            </div>
+            <div id="peoplelist">
+                <div class="info" id="tim">
+                    <div>
+                        <div><h3>Tim Stander</h3><br><p>Game Development</p></div>
+                    </div>
+                </div>
+                <div class="info" id="caleb">
+                    <div>
+                        <div><h3>Caleb Graves</h3><br><p>Graphic Design</p></div>
+                    </div>
+                </div>
+                <div class="info" id="antoine">
+                    <div>
+                        <div><h3>Antoine Florian</h3><br><p>Web Development</p></div>
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div id="usedassets">
+                <h2>Assets Used in the Creation of Ajnaran</h2>
+                <ul>
+                    <li><a href="https://www.youtube.com/channel/UCQKGLOK2FqmVgVwYferltKQ" target="_blank" rel="noopener external nofollow">Ross Bugden</a></li>
+                    <li><a href="https://www.adobe.com/products/audition/features.html" target="_blank" rel="noopener external nofollow">Adobe Audition</a></li>
+                </ul>
+            </div>
+        </main>
+        <main id="play">
+            <h1>Play Ajnaran</h1>
+            <div id="gamebox">
+                <div id="gamearea">
+                        <canvas height="720" width="720"></canvas>
+                    <div id="cmd"><textarea id="map" placeholder="Enter a level here" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea></div>
+                    </div>
+                <div id="inst">
+                    <h2>Controls</h2>
+                    <h3>Character Movement</h3>
+                    <ul>
+                        <li>A</li>
+                        <li>To Move Character Left</li>
+                        <li>D</li>
+                        <li>To Move Character Right</li>
+                        <li>Space</li>
+                        <li>To Jump</li>
+                    </ul>
+                    <h3>Gravity Switch</h3>
+                    <ul>
+                        <li>Up Arrow</li>
+                        <li>To Fall Up</li>
+                        <li>Down Arrow</li>
+                        <li>To Fall Down</li>
+                        <li>Right Arrow</li>
+                        <li>To Fall Right</li>
+                            <li>Left Arrow</li>
+                        <li>To Fall Left</li>
+                    </ul>
+                    <h3>Other</h3>
+                    <ul>
+                        <li>R</li>
+                        <li>To Restart Level</li>
+                        <li>P</li>
+                        <li>To Change Controls</li>
+                        <li>F</li>
+                        <li>To Enter Fullscreen</li>
+                        <li>O(not in textbox)</li>
+                        <li>Open Level</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <div id="ad">
+                    <!--<script>!function(d,l,e,s,c){e=d.createElement("script");e.src="//en.ad.altervista.org/js.ad/size=300X250/?ref="+encodeURIComponent(l.hostname+l.pathname)+"&r="+Date.now();s=d.scripts;c=s[s.length-1];c.parentNode.insertBefore(e,c)}(document,location)</script>-->
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        /*
+          // A debugging script
+        (()=>{
+        
+        stuff = document.createElement("div");
+        stuff.style.zIndex="100";
+        stuff.style.position="fixed";
+        stuff.style.bottom="0";
+        stuff.style.width="100%";
+        stuff.style.height="33%";
+        stuff.style.overflow="auto";
+        stuff.style.backroundColor="white";
+        stuff.id='debug';
+        document.body.appendChild(stuff);
+        cl=console.log;
+        ce=console.error;
+        cw=console.warn;
+        e=Error;
+        console.log = function(){
+          let arr=[];
+          for (let i=0;i<arguments.length;i++){
+            arr.push(arguments[i]);
+          }
+          cl(...arr);
+          x=document.createElement("div");
+          x.innerText=arr.join(" ");
+          x.style.backgroundColor="lightgrey";
+          stuff.appendChild(x);
+        }
+        console.error = function(){
+          let arr=[];
+          for (let i=0;i<arguments.length;i++){
+            arr.push(arguments[i]);
+          }
+          ce(...arr);
+          x=document.createElement("div");
+          x.innerText=arr.join(" ");
+          x.style.backgroundColor="pink";
+          stuff.appendChild(x);
+        }
+        Error = function(){
+          let arr=[];
+          for (let i=0;i<arguments.length;i++){
+            arr.push(arguments[i]);
+          }
+          x=document.createElement("div");
+          x.innerText=arr.join(" ");
+          x.style.backgroundColor="pink";
+          stuff.appendChild(x);
+          return e(...arr);
+        }
+        console.warn = function(){
+          let arr=[];
+          for (let i=0;i<arguments.length;i++){
+            arr.push(arguments[i]);
+          }
+          cw(...arr);
+          x=document.createElement("div");
+          x.innerText=arr.join(" ");
+          x.style.backgroundColor="lightgoldenrodyellow";
+          stuff.appendChild(x);
+        }
+        window.console=console;
+      })()*/
+        </script>
+        <script src="touchlistener.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

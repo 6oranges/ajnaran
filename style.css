@@ -1,0 +1,337 @@
+/*Colors
+Grey:#A8A6AB
+Orange:#F6921E
+LogoBrown:#CA7916
+Tile Purple: #831B80
+Light Blue: #136EAD
+Blue: #116AAE
+Dark Blue: #021026
+OrangeNew: #F2911D*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+#btnAdd{
+    display:none;
+}
+iframe {
+    max-width:100%;
+    display:block;
+    margin:0 auto;
+}
+html,body,#content{
+    width:100%;
+    height:100%;
+    background-color: #FFF;
+}
+#content{
+    overflow:auto;
+}
+#update {
+    z-index:100;
+    opacity:0;
+    transition:opacity .5s;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    pointer-events: none;
+}
+#update div{
+    font-family:'Lato','Arial';
+    color:#fff;
+    width:fit-content;
+    margin:15px auto;
+    padding:10px;
+    background:#333;
+    border-radius:40px;
+}
+#update.show {
+    opacity:1;
+    transition:opacity .5s;
+}
+#heroimage{
+	background-image: url('images/Scene.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1{
+	font-family: 'Source Sans Pro', sans-serif;
+    font-size: 60px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clear{
+	clear: both;
+}
+
+/* Header Style*/
+
+header{
+    width: 100%;
+    background-image: linear-gradient(to bottom, #222, #000);
+    position:relative;
+}
+
+#logo{
+    height:60px;
+    width:200px;
+    float:left;
+	background-image: url('images/Ajnaran.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+/* Navigation Style*/
+
+nav{
+    float: right;
+}
+
+nav ul{
+    list-style-type: none;
+    font-size:0px;
+}
+nav li>*{
+	color: #DDD;
+    padding: 21px;
+    text-decoration: none;
+    display:block;
+    transition: background-color .3s ease-in-out,color .2s ease-in-out;
+    cursor:pointer;
+    background-color:transparent;
+    border:none;
+    font-size:1rem;
+    outline:none;
+}
+
+nav li>*:hover{
+	color: #F6921E;
+}
+nav li>*:active{
+    background-color: #333;
+}
+nav li {
+    display:inline-block;
+}
+main{
+    width: 960px;
+    margin: 0 auto;
+    display:none;
+}
+footer>div {
+    width:fit-content;
+    margin:0 auto;
+}
+header:after,main:after,footer:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+@media only screen and (max-width: 600px) {
+    nav {
+        float:none;
+        display:block;
+        width:fit-content;
+        margin: 0 auto;
+    }
+    #logo {
+        float:none;
+        margin:0 auto;
+    }
+}
+
+.mainimg{
+	height: 400px;
+	background-image: url('images/Scene.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+    padding: 140px 0;
+    box-shadow: 0 0 5px #000;
+}
+
+/* Home Page Content*/
+
+.event{
+	margin-top: 20px;
+    min-height: 400px;
+    background-color: #DDD;
+    padding: 10px;
+}
+
+/* Game Page Content*/
+
+#gamebox:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+#gamearea:after{
+	content:"";
+    display:table;
+    clear:both;
+}
+#gamearea{
+    float:left;
+    max-height:initial;
+	max-width:720px;
+}
+canvas {
+	width:100%;
+}
+textarea {
+	max-width:100%;
+}
+#inst{
+	width: 220px;
+    height: 780px;
+    background-color: #DDD;
+    position: relative;
+    float: right;
+    padding: 10px;
+	margin:0 auto;
+	max-width:720px;
+}
+
+#inst li{
+    list-style: none;
+}
+
+#cmd{
+    background-image: linear-gradient(to bottom, #F6921E, #D6721E);
+    padding: 10px 0;
+	float:left;
+	width:100%;
+}
+
+#map{
+	height: 40px;
+    width: 400px;
+    margin: 0 auto;
+    display: block;
+    resize: none;
+    font-family: "Courier New";
+}
+
+#game canvas{
+	margin: 0 auto;
+    display: block;
+}
+
+/*About Page Content*/
+
+
+#peoplelist{
+    font-size:0;
+}
+.info>div{
+    padding-top: 100%;
+    width: 100%;
+}
+
+.info{
+    background-color: #0005;
+    text-align: center;
+    width:310px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left:15px;
+    position:relative;
+    display:inline-block;
+}
+.info:first-child{
+    margin-left:0;
+}
+.info>div>div{
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    height: 80px;
+    padding: 20px 0;
+    background-image: linear-gradient(to bottom, #222, #000);
+    position: absolute;
+    bottom: 0;
+    color: #FFF;
+    width:100%;
+    font-size:1rem;
+}
+.info:hover>div>div{
+    opacity: 1;
+}
+.info h3{
+	line-height: 10px;
+}
+
+#tim{
+	background-image: url('images/tim.jpg');
+}
+
+#caleb{
+	background-image: url('images/caleb.jpg');
+}
+
+#antoine{
+	background-image: url('images/antoine.jpg');
+}
+
+#usedassets{
+	background-color: #DDD;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#usedassets li{
+	list-style: none;
+}
+
+#usedassets a{
+	color: #000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1020px) {
+    main {
+        width:100%
+    }
+    #peoplelist .info {
+        width:50%;
+        min-width:310px;
+        padding-left:0;
+        margin:0 auto;
+        display:block;
+    }
+    .info>div>div{
+        opacity: 1;
+    }
+    #inst {
+        float:none;
+        width:100%;
+    }
+    #gamearea{
+        float:none;
+        margin:0 auto;
+    }
+}
+/*Footer Style*/
+
+footer{
+    width: 100%;
+    background-color: #111;
+    color: #FFF;
+    padding: 10px;
+}
+footer>div:after {
+    content:"";
+    display:table;
+    clear:both;
+}

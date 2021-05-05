@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 450 50" width="450" height="50">
+    <defs>
+        <style>
+            .cls-1 {
+                isolation: isolate;
+            }
+            
+            .cls-2 {
+                fill: #929497;
+            }
+            
+            .cls-15,
+            .cls-3 {
+                fill: #d0d2d3;
+            }
+            
+            .cls-4 {
+                fill: #a6a8ab;
+            }
+            
+            .cls-5 {
+                fill: #f9ae42;
+            }
+            .cls-7 {
+                fill: #de9c37;
+            }
+            
+            .cls-8 {
+                fill: #00adee;
+            }
+            
+            .cls-9 {
+                fill: #006a93;
+            }
+            
+            .cls-10 {
+                fill: #0080b0;
+            }
+            
+            .cls-11 {
+                fill: #b51218;
+            }
+            
+            .cls-12 {
+                fill: #ec1c24;
+            }
+            
+            .cls-13 {
+                fill: #ce181e;
+            }
+            
+            .cls-14 {
+                fill: #bbbdbf;
+            }
+            
+            .cls-14,
+            .cls-15 {
+                opacity: 0.5;
+            }
+            
+            .cls-16 {
+                fill: #f1f1f2;
+            }
+        </style>
+    </defs>
+    <title>Artboard 1</title>
+    <g class="cls-1">
+        <g id="Layer_1" data-name="Layer 1">
+            <polygon class="cls-2" points="100 0 100 50 50 50 100 0"></polygon>
+            <polygon class="cls-3" points="100 0 50 50 50 0 100 0"></polygon>
+            <rect class="cls-4" x="54.26" y="4.26" width="41.48" height="41.48"></rect>
+            <polygon class="cls-8" points="170 0 150 0 150 45.74 154.26 45.74 154.26 4.26 165.74 4.26 170 0"></polygon>
+            <polygon class="cls-9" points="170 0 165.74 4.26 165.74 45.74 150 45.74 150 50 170 50 170 0"></polygon>
+            <rect class="cls-10" x="150" y="4.26" width="15.74" height="41.48"></rect>
+            <polygon class="cls-11" points="250 0 250 50 200 50 250 0"></polygon>
+            <polygon class="cls-12" points="250 0 200 50 200 0 250 0"></polygon>
+            <rect class="cls-13" x="204.26" y="4.26" width="41.48" height="41.48"></rect>
+            <polygon class="cls-14" points="300 0 300 50 250 50 254.26 45.74 295.74 45.74 295.74 4.26 300 0"></polygon>
+            <polygon class="cls-15" points="300 0 295.74 4.26 254.26 4.26 254.26 45.74 250 50 250 0 300 0"></polygon>
+            <polygon class="cls-9" points="330 50 350 50 350 4.26 345.74 4.26 345.74 45.74 334.26 45.74 330 50"></polygon>
+            <polygon class="cls-8" points="330 50 334.26 45.74 334.26 4.26 350 4.26 350 0 330 0 330 50"></polygon>
+            <rect class="cls-10" x="334.26" y="4.26" width="15.74" height="41.48"></rect>
+            <polygon class="cls-9" points="400 30 400 50 350 50 354.26 45.74 395.74 45.74 395.74 34.26 400 30"></polygon>
+            <polygon class="cls-8" points="400 30 395.74 34.26 354.26 34.26 354.26 50 350 50 350 30 400 30"></polygon>
+            <rect class="cls-10" x="354.26" y="34.26" width="41.48" height="15.74"></rect>
+            <polygon class="cls-8" points="400 20 400 0 445.74 0 445.74 4.26 404.26 4.26 404.26 15.74 400 20"></polygon>
+            <polygon class="cls-9" points="400 20 404.26 15.74 445.74 15.74 445.74 0 450 0 450 20 400 20"></polygon>
+            <rect class="cls-10" x="404.26" width="41.48" height="15.74"></rect>
+            <polygon class="cls-16" points="294.25 5.75 290.97 9.03 259.03 9.03 259.03 40.97 255.75 44.25 255.75 5.75 294.25 5.75"></polygon>
+        </g>
+    </g>
+</svg>
